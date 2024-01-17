@@ -49,3 +49,5 @@ exports.default = series(
     parallel(copyHTML, cssTask, jsTask, imageTask),
     watchTask
     );
+
+exports.build = series(copyHTML, cssTask, jsTask, imageTask);
